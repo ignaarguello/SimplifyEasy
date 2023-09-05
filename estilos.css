@@ -101,6 +101,11 @@
   .number-fraccion:nth-child(1) {
       border-bottom: 2px solid rgb(97, 97, 97);
   }
+
+  #titulo-NoOperacionesRecientes{
+    font-size: 20px;
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (min-width:414px) {

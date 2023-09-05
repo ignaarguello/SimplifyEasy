@@ -8,11 +8,8 @@ function simplificarFraccion(numerador, denominador) {
             return calcularMCD(b, a % b);
         }
     }
-
     // Calcula el MCD de los dos números
     const mcd = calcularMCD(numerador, denominador);
-    console.log('MCD Encontrado:', mcd)
-
     if (mcd === 1) {
         return {
             success: false
@@ -21,7 +18,6 @@ function simplificarFraccion(numerador, denominador) {
         // Simplifica la fracción dividiendo ambos números por el MCD
         const numeradorSimplificado = numerador / mcd;
         const denominadorSimplificado = denominador / mcd;
-
         // Devuelve los valores simplificados como un objeto
         return {
             success: true,

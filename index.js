@@ -1,6 +1,15 @@
+//Variable del contenedor 'Resultado'
+const contenedor_resultado = document.querySelector('#contenedor-resultado');
+
+const ultima_operacionInLocalStorage = localStorage.getItem('ultima-operacion')
+if (ultima_operacionInLocalStorage === null) {
+    contenedor_resultado.innerHTML = `
+    <h2 id='titulo-NoOperacionesRecientes'>No hubo operaciones recientes...</h2>
+    `
+}
+
 //Captamos los valores de los inputs y agregarmos eventos a botones:
 const btn_simplificar = document.querySelector('#btn-simplificar');
-const contenedor_resultado = document.querySelector('#contenedor-resultado');
 
 const obtener_valores_inputs = (e) => {
     e.preventDefault()
