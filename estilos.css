@@ -12,6 +12,7 @@
     align-items: center;
     padding: 1rem;
     min-height: 110vh;
+    overflow-y: hidden;
   }
 
   #container-form-fraccion {
@@ -79,7 +80,7 @@
   #fraccion-simplificada-final-js {
     border: 1px solid black;
     border-radius: 4px;
-    width: 15%;
+    width: max-content;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -105,6 +106,13 @@
   #titulo-NoOperacionesRecientes{
     font-size: 20px;
     margin-top: 2rem;
+  }
+
+  #titulo-error{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 20px;
+    width: max-content;
   }
 }
 

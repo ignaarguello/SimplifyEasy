@@ -31,7 +31,7 @@ const obtener_valores_inputs = (e) => {
         </div>`
     } else {
         contenedor_resultado.innerHTML = `
-        <h2>Error. No pudo simplificarse la fracción.</h2>
+        <h2 id='titulo-error'>Error. No pudo simplificarse la fracción.</h2>
         `
     }
 }
