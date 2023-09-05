@@ -1,17 +1,24 @@
 @media screen and (min-width: 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   body {
     /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    height: 100vh;
+    min-height: 110vh;
   }
 
   #container-form-fraccion {
     /* border: 2px solid red; */
     width: 85%;
     height: 50vh;
+    margin-top: .3rem;
   }
 
   #divisor-fraccion-hr {
@@ -35,22 +42,78 @@
     border: none;
   }
 
-  #container-buttons{
-      width: 100%;
-      display: flex;
-      gap: .5rem;
+  #container-buttons {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: .3rem;
   }
 
-  .btn{
-      width: 50%;
+  .btn {
+    width: 50%;
   }
 
-  #contenedor-resultado{
-      border: 2px solid greenyellow;
-      margin-top: 1rem;
-      height: 9rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  #contenedor-resultado {
+    /* border: 2px solid greenyellow; */
+    margin-top: 1rem;
+    min-height: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  #titulo-mcd-js {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  #contenedor-frac-simplificada-js {
+   /*  border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    margin-top: .3rem;
+  }
+
+  #fraccion-simplificada-final-js {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+  }
+
+  #titulo-fraSimplificada {
+    font-size: 1.1rem;
+    width: 85%;
+    text-align: center;
+  }
+
+  .number-fraccion {
+    /* border: 2px solid blueviolet; */
+    text-align: center;
+    padding: 2px;
+  }
+
+  .number-fraccion:nth-child(1) {
+      border-bottom: 2px solid rgb(97, 97, 97);
+  }
+}
+
+@media screen and (min-width:414px) {
+    body{
+        padding: 2rem;
+    }
+
+    #fraccion-simplificada-final-js {
+       margin-left: 1rem;
+      }
+    
+      #titulo-fraSimplificada {
+        width: max-content;
+        margin-left: 2rem;
+      }
 }

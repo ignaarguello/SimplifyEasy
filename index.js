@@ -12,13 +12,12 @@ const obtener_valores_inputs = (e) => {
     //Realizamos el condicional que imprime en pantalla los resultados:
     if (fraccionSimplificada.success === true) {
         contenedor_resultado.innerHTML = `
-        <h2>MCD Encontrado: ${fraccionSimplificada.mcd}</h2>
+        <h2 id='titulo-mcd-js'>MCD Encontrado: ${fraccionSimplificada.mcd}</h2>
         <div id='contenedor-frac-simplificada-js'>
-            <h2>Fracción Simplificada:</h2>
+            <h2 id='titulo-fraSimplificada'>Fracción Simplificada = </h2>
             <div id='fraccion-simplificada-final-js'>
-                <h4>${fraccionSimplificada.numerador}</h4>
-                <hr id='hr-frac-simpli-final'>
-                <h4>${fraccionSimplificada.denominador}</h4>
+                <h4 class='number-fraccion'>${fraccionSimplificada.numerador}</h4>
+                <h4 class='number-fraccion'>${fraccionSimplificada.denominador}</h4>
             </div>
         </div>`
     } else {
