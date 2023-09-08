@@ -1,3 +1,5 @@
+
+
 //Variable del contenedor 'Resultado'
 const contenedor_resultado = document.querySelector('#contenedor-resultado');
 

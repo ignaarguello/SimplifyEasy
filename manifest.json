@@ -1,0 +1,29 @@
+{
+    "theme_color": "#d0021b",
+    "background_color": "#000000",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Simplify Easy",
+    "short_name": "Simplify Easy",
+    "description": "Aplication to simplify easy",
+    "lang": "es",
+    "icons": [
+        {
+            "src": "/images/logoSE.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logoSE.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logoSE.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ]
+}
